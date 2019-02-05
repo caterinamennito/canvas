@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+<canvas id="canv" width= "1400" height = "1900">
+  Votre navigateur ne supporte pas de canvas :(
+</canvas>
+
+<script type="text/javascript">
+var c = document.getElementById('canv');
+var ctx = c.getContext("2d");
+
+//main boat
+ctx.fillStyle = "#bc722d";
+ctx.beginPath();
+   ctx.moveTo(100, 500);
+   ctx.lineTo(50,400);
+   ctx.lineTo(400, 400);
+   ctx.lineTo(350, 500)
+   ctx.closePath();
+   ctx.fill();
+
+// black line
+ctx.strokeStyle = "black";
+ctx.beginPath();
+  ctx.moveTo(60, 420);
+  ctx.lineTo(390,420);
+  ctx.closePath();
+  ctx.stroke();
+
+//small triangle
+ctx.fillStyle = "#8bbe17 ";
+  ctx.beginPath();
+    ctx.moveTo(200, 50);
+    ctx.lineTo(200,390);
+    ctx.lineTo(100, 390);
+    ctx.closePath();
+    ctx.fill();
+
+//central stick
+ctx.fillStyle = "#6f410b";
+ctx.fillRect(210,50,15, 350 );
+
+//big triangle
+ctx.fillStyle = "#f7f140 ";
+  ctx.beginPath();
+    ctx.moveTo(235, 50);
+    ctx.lineTo(235,390);
+    ctx.lineTo(450, 390);
+    ctx.closePath();
+    ctx.fill();
+
+
+//HOUSE
+
+//triangle
+ctx.fillStyle = "#e7cfe0 ";
+  ctx.beginPath();
+    ctx.moveTo(800, 70);
+    ctx.lineTo(900,200);
+    ctx.lineTo(700, 200);
+    ctx.closePath();
+    ctx.fill();
+
+//rectangle
+ctx.fillRect(700,200, 200, 300);
+
+//roof
+ctx.fillStyle = " #cd4b0b";
+  ctx.beginPath();
+    ctx.moveTo(800, 70);
+    ctx.lineTo(1100,50);
+    ctx.lineTo(1200, 160);
+    ctx.lineTo(900, 200);
+    ctx.closePath();
+    ctx.fill();
+
+
+//main wall
+ctx.strokeStyle = "black ";
+  ctx.beginPath();
+    ctx.moveTo(900, 200);
+    ctx.lineTo(900,500);
+    ctx.lineTo(1200, 420);
+    ctx.lineTo(1200, 160);
+    ctx.closePath();
+    ctx.stroke();
+
+//door
+ctx.fillStyle = "#002679 ";
+  ctx.beginPath();
+    ctx.moveTo(1020, 468);
+    ctx.lineTo(1020,350);
+    ctx.lineTo(1100, 335);
+    ctx.lineTo(1100, 447 );
+    ctx.closePath();
+    ctx.fill();
+
+//window
+ctx.strokeStyle = "black ";
+ctx.beginPath();
+ctx.arc(795, 300, 50, 0, Math.PI * 2, true);
+    ctx.stroke();
+
+
+ctx.fillStyle = " #cae8e3";
+ctx.beginPath();
+ctx.arc(795, 300, 50, 0, Math.PI * 2, true);
+    ctx.fill();
+
+
+//BONHOMME
+
+
+
+//legs
+ctx.beginPath();
+ctx.moveTo(375,1200);
+ctx.lineTo(370, 1300);
+ctx.closePath();
+    ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(410,1200);
+ctx.lineTo(415, 1300);
+ctx.closePath();
+    ctx.stroke();
+
+
+//feet
+ctx.fillStyle = "#ced086 ";
+ctx.beginPath();
+ctx.arc(370, 1300, 20, 0, Math.PI * 2, true);
+    ctx.fill();
+
+ctx.fillStyle = "#ced086 ";
+ctx.beginPath();
+ctx.arc(418, 1300, 20, 0, Math.PI * 2, true);
+    ctx.fill();
+
+
+//body
+ctx.fillStyle = "#0a7857 ";
+  ctx.beginPath();
+    ctx.moveTo(370, 940);
+    ctx.lineTo(320,1200);
+    ctx.lineTo(470, 1200);
+    ctx.lineTo(430,940 );
+    ctx.closePath();
+    ctx.fill();
+
+//pocket
+ctx.fillStyle = " #670202";
+  ctx.beginPath();
+    ctx.moveTo(380, 1020);
+    ctx.lineTo(380,1050);
+    ctx.lineTo(400, 1060);
+    ctx.lineTo(420, 1050);
+    ctx.lineTo(420, 1020);
+
+    ctx.closePath();
+    ctx.fill();
+
+
+    //head
+ctx.strokeStyle = "black ";
+ctx.beginPath();
+ctx.arc(400, 900, 50, 0, Math.PI * 2, true);
+    ctx.stroke();
+
+ctx.fillStyle = "#ced086 ";
+ctx.beginPath();
+ctx.arc(400, 900, 50, 0, Math.PI * 2, true);
+    ctx.fill();
+
+
+//smile
+ctx.strokeStyle = "black ";
+ctx.beginPath();
+ctx.arc(400, 920, 20, 0, Math.PI, false);
+    ctx.stroke();
+
+//eyes
+ctx.fillStyle = "black ";
+ctx.beginPath();
+ctx.arc(390, 904, 4, 0, Math.PI * 2, true);
+    ctx.fill();
+
+ctx.fillStyle = "black ";
+ctx.beginPath();
+ctx.arc(410, 904, 4, 0, Math.PI * 2, true);
+    ctx.fill();
+
+
+
+//hair
+ctx.strokeStyle = "black ";
+ctx.beginPath();
+ctx.lineWidth = 28;
+ctx.arc(400, 900, 50, 0, Math.PI, true);
+    ctx.stroke();
+
+//left arm
+ctx.beginPath();
+ctx.lineWidth = 1;
+ctx. moveTo(362, 980);
+ctx.lineTo(300, 1080);
+ctx.closePath();
+ctx.stroke();
+
+//left hand
+ctx.fillStyle = "#ced086 ";
+ctx.beginPath();
+ctx.arc(300, 1080, 10, 0, Math.PI * 2, true);
+    ctx.fill();
+
+//right arm
+ctx.beginPath();
+ctx. moveTo(437, 980);
+ctx.lineTo(499, 1080);
+ctx.closePath();
+ctx.stroke();
+
+//right hand
+ctx.fillStyle = "#ced086 ";
+ctx.beginPath();
+ctx.arc(498, 1080, 10, 0, Math.PI * 2, true);
+    ctx.fill();
+
+
+
+//ANDROID
+
+//antennas
+ctx.strokeStyle = "#9ed024 ";
+ctx.beginPath();
+ctx.moveTo(940, 900);
+ctx.lineTo(860, 820);
+ctx.lineCap = "round";
+ctx.lineWidth = 10;
+    ctx.stroke();
+
+ctx.strokeStyle = "#9ed024 ";
+ctx.beginPath();
+ctx.moveTo(940, 900);
+ctx.lineTo(1020, 820);
+ctx.lineCap = "round";
+ctx.lineWidth = 10;
+    ctx.stroke();
+
+
+//head
+ctx.fillStyle = "#9ed024 ";
+ctx.beginPath();
+ctx.arc(940, 930, 110, 0, Math.PI , true);
+    ctx.fill();
+
+//eyes
+ctx.fillStyle = "white ";
+ctx.beginPath();
+ctx.arc(895, 880, 15, 0, Math.PI * 2, true);
+    ctx.fill();
+
+ctx.fillStyle = "white ";
+ctx.beginPath();
+ctx.arc(985, 880, 15, 0, Math.PI * 2, true);
+    ctx.fill();
+
+//body
+ctx.fillStyle = "#9ed024 ";
+ctx.fillRect(830, 950, 220, 200);
+
+ctx.beginPath();
+ctx.moveTo(845, 1150);
+ctx.lineTo(1035, 1150);
+ctx.lineCap = "round";
+ctx.lineWidth = 30;
+    ctx.stroke();
+
+//arms
+ctx.beginPath();
+ctx.moveTo(800, 970);
+ctx.lineTo(800, 1070);
+ctx.lineCap = "round";
+ctx.lineWidth = 40;
+    ctx.stroke();
+
+
+ctx.beginPath();
+ctx.moveTo(1080, 970);
+ctx.lineTo(1080, 1070);
+ctx.lineCap = "round";
+ctx.lineWidth = 40;
+    ctx.stroke();
+
+//legs
+ctx.beginPath();
+ctx.moveTo(980, 1100);
+ctx.lineTo(980, 1230);
+ctx.lineCap = "round";
+ctx.lineWidth = 40;
+    ctx.stroke();
+
+
+    ctx.beginPath();
+    ctx.moveTo(905, 1100);
+    ctx.lineTo(905, 1230);
+    ctx.lineCap = "round";
+    ctx.lineWidth = 40;
+        ctx.stroke();
+
+
+//DRAPEAU
+
+ctx.fillStyle = "black";
+ctx.fillRect(10, 1510, 500, 100);
+
+//rect red
+ctx.fillStyle = "green";
+ctx.fillRect(10, 1710, 500, 100);
+
+//triangle
+ctx.fillStyle = "red";
+ctx.beginPath();
+   ctx.moveTo(10, 1510);
+   ctx.lineTo(160, 1660);
+   ctx.lineTo(10, 1810);
+   ctx.closePath();
+   ctx.fill();
+
+</script>
+
+</body>
+</html>
